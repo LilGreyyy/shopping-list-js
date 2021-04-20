@@ -1,0 +1,72 @@
+body {
+    background-color: rgba(216, 165, 117, 0.788);
+    font-family: Garamond;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#poga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jaunaPrece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 30px;
+    border-color:rgb(161, 144, 122);
+
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    font-size: 22px;
+}
+
+input#prece {
+    height: 20px;
+    width: 170px;
+    font-size: 20px;
+    border: solid 2px black;
+    border-radius: 30px;
+    border-color:rgb(161, 144, 122);
+}
+
+#pievienotPreci {
+    
+    font-size: 16px;
+    height: 22px;
+    width: 130px;
+    border: solid 2px black;
+    border-radius: 30px;
+    border-color:rgb(161, 144, 122);
+}
+
+#ps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nosaukums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 200px;
+    width: 150px;
+    padding: 15px;
+    margin: 20px;
+    background-color: darkkhaki;
+}
