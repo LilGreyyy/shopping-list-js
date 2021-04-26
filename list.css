@@ -1,72 +1,93 @@
 body {
-    background-color: rgba(216, 165, 117, 0.788);
-    font-family: Garamond;
+    background-color: rgb(114, 63, 114) ;
+    font-family:'Garamond';
 }
-
 h1 {
+    font:'Garamond',sans-serif;
+    color:rgb(247, 247, 247);
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 45px;
+    animation-duration: 3s;
+    animation-name:slidein;
 }
-
-#poga {
+h2 {
+    display: flex;
+    justify-content: center;
+}
+#button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#jaunaPrece {
+#newProduct {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 30px;
-    font-size: 25px;
-    border-radius: 30px;
-    border-color:rgb(161, 144, 122);
-
-}
-
-h3 {
-    display: flex;
-    justify-content: left;
-    font-size: 22px;
-}
-
-input#prece {
-    height: 20px;
-    width: 170px;
     font-size: 20px;
-    border: solid 2px black;
-    border-radius: 30px;
-    border-color:rgb(161, 144, 122);
+    width: 160px;
+    height: 50px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    border-color: rgb(129, 77, 129);
+    background-color: rgb(255, 255, 255);  
 }
 
-#pievienotPreci {
-    
-    font-size: 16px;
+#popUp {
+    display:none;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#form {
+    background-color: rgb(179, 88, 166);
+    display:inline-block;
+    height: 200px;
+    width: 270px;
+    justify-content: center;
+}
+input#Product {
+    display: flex;
+    margin-left: 10%;
     height: 22px;
-    width: 130px;
-    border: solid 2px black;
-    border-radius: 30px;
-    border-color:rgb(161, 144, 122);
+    border-radius: 7px;
+    border-style: ridge;
+    border-color: rgb(212, 211, 211);
+    outline: none;
+}
+input#Amount {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 10%;
+    height: 22px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-color: rgb(212, 211, 211);
+    outline: none;
+}
+#addProduct {
+    margin-top: 4%;
+    margin-left: 23%;
+    height: 36px;
+    width: 98px;
+    border-radius: 10px;
 }
 
-#ps {
+#list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.nosaukums {
-    display: flex;
-    flex-direction: column;
+.product {
+    display:table;
+    flex-direction:column;
     align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
-    height: 200px;
-    width: 150px;
-    padding: 15px;
-    margin: 20px;
-    background-color: darkkhaki;
+    border: rgb(209, 209, 209);
+    border-radius: 16px;
+    height: 72px;
+    width: 106%;
+    padding: 4px;
+    margin-top: 9px;
+    background-color:rgb(129, 42, 146)
 }

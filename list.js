@@ -1,41 +1,40 @@
-const POP_UP = document.getElementById('t');
+const PopUp = document.getElementById('popUp');
 let preces = [];
 
 window.addEventListener('load', () => {
-    preces = JSON.parse(localStorage.getItem("preces") || "[]");
-    console.log(preces)
+    preces = JSON.parse(localStorage.getItem("products") || "[]");
+        console.log(products)
+        render();
+    });
+
+    document.getElementById('newProduct').addEventListener('click', () => {
+        PopUp.style.display = 'flex';
+    })
+    document.getElementById('addProduct').addEventListener('click', () => {
+        PopUp.style.display = 'none';
+
+    let product = {Product: Product.value, Amount: Amount.value};
+
+    Product.value = "";
+    Amount.value = "";
+
+    products.push(product);
+
     render();
-});
-
-document.getElementById('jaunaPrece').addEventListener('click', () => {
-    POP_UP.style.display = 'block';
-
 })
-
-document.getElementById('pievienotPreci').addEventListener('click', () => {
-    POP_UP.style.display = 'none';
-
-    let prece = {prece: prece.value};
-
-    prece.value = "";
-
-    gramatas.push(prece);
-
-    render();
-})
-
-function render() {
-    let ps = document.getElementById('ps');
-    ps.innerHTML = "";
-
-    for(let i = 0; i < preces.length; i++) {
-        let prece = `
-        <div class="prece">
-            <h3>Prece: ${preces[i].nosaukums}</h3>
-        </div>`;
-
-        ps.innerHTML += prece;
+    function render() {
+        let list = document.getElementById('list');
+        list.innerHTML = "";
+    
+        for(let i = 0; i < products.length; i++) {
+            let product = `
+            <div class="product">
+                <h3>Prece: ${products[i].Product}</h3> 
+                <h3>Amount: ${products[i].Amount}</h3>
+            </div>`;
+    
+            list.innerHTML += product;
+        }
+    
+        localStorage.setItem("products", JSON.stringify(products))
     }
-
-    localStorage.setItem("preces", JSON.stringify(preces))
-}
