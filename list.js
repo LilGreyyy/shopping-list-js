@@ -1,8 +1,8 @@
 const PopUp = document.getElementById('popUp');
-let preces = [];
+let products = [];
 
 window.addEventListener('load', () => {
-    preces = JSON.parse(localStorage.getItem("products") || "[]");
+    products = JSON.parse(localStorage.getItem("products") || "[]");
         console.log(products)
         render();
     });
@@ -23,17 +23,17 @@ window.addEventListener('load', () => {
     render();
 })
     function render() {
-        let list = document.getElementById('list');
-        list.innerHTML = "";
+        let productlist = document.getElementById('productlist');
+        productlist.innerHTML = "";
     
         for(let i = 0; i < products.length; i++) {
             let product = `
             <div class="product">
-                <h3>Prece: ${products[i].Product}</h3> 
+                <h3>Product: ${products[i].Product}</h3> 
                 <h3>Amount: ${products[i].Amount}</h3>
             </div>`;
     
-            list.innerHTML += product;
+            productlist.innerHTML += product;
         }
     
         localStorage.setItem("products", JSON.stringify(products))

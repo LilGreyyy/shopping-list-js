@@ -73,7 +73,7 @@ input#Amount {
     border-radius: 10px;
 }
 
-#list {
+#productlist {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,5 +89,5 @@ input#Amount {
     width: 106%;
     padding: 4px;
     margin-top: 9px;
-    background-color:rgb(129, 42, 146)
+    background-color:rgb(140, 82, 151)
 }
